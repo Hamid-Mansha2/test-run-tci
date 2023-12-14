@@ -1,0 +1,13 @@
+os: linux
+dist: xenial
+language: ruby
+ruby:
+  - 2.3.8
+install: skip
+script: ruby -v
+
+jobs:
+  include:
+    - dist: xenial
+    - dist: bionic
+    - dist: focal
